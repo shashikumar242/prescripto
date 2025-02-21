@@ -7,6 +7,6 @@ export default defineConfig({
   server: {
     port: process.env.PORT || 5173,
     host: "0.0.0.0",
-    allowedHosts: ["https://prescripto-frontend-rj4l.onrender.com/"],
+    allowedHosts: ["prescripto-frontend-rj4l.onrender.com"],
   },
 });
