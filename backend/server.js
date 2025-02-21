@@ -18,7 +18,10 @@ connectCloudinary();
 // ✅ Fix CORS: Explicitly allow your frontend URL
 app.use(
   cors({
-    origin: "https://prescripto-frontend-rj4l.onrender.com", // Allow only this frontend
+    origin: [
+      "https://prescripto-frontend-rj4l.onrender.com",
+      "https://prescripto-admin-53x1.onrender.com",
+    ],
     methods: "GET,POST,PUT,DELETE",
     credentials: true, // Allow cookies and headers
   })
